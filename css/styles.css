@@ -4,7 +4,7 @@
 
 
 
-
+ 
 
 
 ------------------------------------------ */
@@ -45,6 +45,28 @@ nav ul {
   display: flex;
 }
 
+.show-nav {
+  display: none;
+}
+
+.show-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background: white;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.show-nav {
+  padding: 0 20px;
+}
+
 nav li {
   height: 60px;
 }
@@ -53,7 +75,7 @@ nav i {
   padding-left: 5px;
 }
 .brandlogo {
-  font-size: 50px;
+  font-size: 3rem;
   color: #f58a65;
 }
 nav a {
@@ -70,7 +92,7 @@ nav a p {
 }
 
 nav a i {
-  font-size: 0.4em;
+  font-size: 4rem;
 }
 
 .download-btn {
@@ -124,4 +146,22 @@ nav a i {
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 40px;
+}
+
+/*  RESPONSIVENESS
+----------------------------------------*/
+
+@media (max-width: 1024px) {
+  .hide-nav {
+    display: none;
+  }
+  .show-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .show-nav {
+    width: 100%;
+  }
 }
