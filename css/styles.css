@@ -9,131 +9,119 @@
 
 ------------------------------------------ */
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
+body {
+  /* min-height: 100vh; */
+  font-family: "Poppins", sans-serif;
+  color: #1f233e;
+}
 
-
-
-
-
-*{
-    margin:0;
-    padding: 0;
-    text-decoration:none;
-    box-sizing:border-box;
-  }
-  
-  body{
-    /* min-height: 100vh; */
-    font-family: "Poppins", sans-serif;
-    color: #1F233E;
-    
-  }
-
-  .content-wrap {
-    max-width: 1440px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-
+.content-wrap {
+  max-width: 1440px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
 
 /*  TOP NAV
 ----------------------------------------------*/
-  nav {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-bottom:50px;
-  }
-  
-  nav ul{
-    list-style: none;
-    
-  }
-  .nav-flex {
-    display: flex;
-  }
-  
-  nav li {
-   height: 60px;
-  }
-
-  nav i{
-   padding-left:5px;
-  }
-.brandlogo{
-  font-size: 50px;
-  color: #F58A65;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
 }
-  nav a{
-    height: 100%;
-    padding: 0 25px;
-    display:flex;
-    align-items:center;
-    color: #1F233E;
-  }
 
-  nav a p{
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
+nav ul {
+  list-style: none;
+}
+.nav-flex {
+  display: flex;
+}
 
-  nav a i {
-    font-size: 0.4em;
-  }
+nav li {
+  height: 60px;
+}
 
-  .download-btn {
-    background-color: #F58A65;
-    border-radius: 30px;
-  }
+nav i {
+  padding-left: 5px;
+}
+.brandlogo {
+  font-size: 50px;
+  color: #f58a65;
+}
+nav a {
+  height: 100%;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  color: #1f233e;
+}
 
-.download-btn:hover{
-  background-color: #FFA98B;
+nav a p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav a i {
+  font-size: 0.4em;
+}
+
+.download-btn {
+  background-color: #f58a65;
+  border-radius: 30px;
+}
+
+.download-btn:hover {
+  background-color: #ffa98b;
   transition: 0.3s;
   transition-timing-function: ease-out;
- 
 }
-.nav-flex li:nth-child(-n+4) a:hover{
-  color:#F58A65;
+.nav-flex li:nth-child(-n + 4) a:hover {
+  color: #f58a65;
   transition: 0.4s;
   transition-timing-function: ease-out;
-}  
-.download-btn a{
-    color: white;
-    
-  }
-    
+}
+.download-btn a {
+  color: white;
+}
+
 /*   HEADER COVER SECTION
 ---------------------------------------*/
-.cover{
-  width:100%;
-  min-height:200px;
-  background-color: #F7DCDB;
-  padding:40px;
+.cover {
+  width: 100%;
+  min-height: 200px;
+  background-color: #f7dcdb;
+  padding: 40px;
   border-radius: 30px;
-  
 }
 
-.cover-icons{
-  display:flex;
-  flex-direction:row;
+.cover-icons {
+  display: flex;
+  flex-direction: row;
 }
 
-.cover-icons i{ 
-  font-size:2rem;
+.cover-icons i {
+  font-size: 2rem;
   padding-right: 30px;
 }
 
 .cover h1 {
-    font-family: "Darker Grotesque", sans-serif;
-    font-weight: 800;
-    font-size:5rem;
-    margin-top:100px;
-    padding-bottom:10px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  margin-top: 100px;
+  padding-bottom: 10px;
 }
-.cover p{
-  padding-right:50%;
-  font-size:1.5rem;
-  line-height:1.5;
-  margin-bottom:40px;
+.cover p {
+  padding-right: 50%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
