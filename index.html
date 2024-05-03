@@ -33,10 +33,10 @@
         <a href="#"><i class="fa fa-brands fa-stumbleupon brandlogo"></i></a>
 
         <!------------- SIDE NAV BAR-------------->
-        <ul class="nav-flex side-nav show-nav">
-          <li>
-            <a href="#">
-              <svg
+        <ul class="nav-items sidenav show-nav">
+          <li onclick="hidesidebar()">
+            <a href="#"
+              ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="26"
                 viewBox="0 -960 960 960"
@@ -44,9 +44,8 @@
               >
                 <path
                   d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                />
-              </svg>
-            </a>
+                /></svg
+            ></a>
           </li>
           <li>
             <a href="#">
@@ -65,7 +64,6 @@
           <li>
             <a href="#">
               <p>Resources</p>
-              <i class="fa fa-solid fa-chevron-down"></i>
             </a>
           </li>
 
@@ -83,39 +81,50 @@
           </li>
         </ul>
         <!------------- NAV BAR ------------------>
-        <ul class="nav-flex hide-nav">
-          <li>
+        <ul class="nav-items">
+          <li class="hide-nav">
             <a href="#">
               <p>Product</p>
               <i class="fa fa-solid fa-chevron-down"></i>
             </a>
           </li>
 
-          <li>
+          <li class="hide-nav">
             <a href="#">
               <p>Solutions</p>
               <i class="fa fa-solid fa-chevron-down"></i>
             </a>
           </li>
 
-          <li>
+          <li class="hide-nav">
             <a href="#">
               <p>Resources</p>
-              <i class="fa fa-solid fa-chevron-down"></i>
             </a>
           </li>
 
-          <li>
+          <li class="hide-nav">
             <a href="#">
               <p>Blog</p>
             </a>
           </li>
-          <li class="download-btn">
+          <li class="download-btn hide-nav">
             <a href="#">
               <p>DOWNLOAD</p>
-
               <i class="fa fa-solid fa-chevron-down"></i>
             </a>
+          </li>
+          <li class="menubutton" onclick="showsidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
           </li>
         </ul>
       </nav>
@@ -135,5 +144,17 @@
         </div>
       </div>
     </header>
+
+    <script>
+      function showsidebar() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenav.style.display = "flex";
+      }
+
+      function hidesidebar() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenav.style.display = "none";
+      }
+    </script>
   </body>
 </html>
