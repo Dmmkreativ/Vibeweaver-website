@@ -33,7 +33,7 @@
         <a href="#"><i class="fa fa-brands fa-stumbleupon brandlogo"></i></a>
 
         <!------------- SIDE NAV BAR-------------->
-        <ul class="nav-items sidenav show-nav">
+        <ul class="nav-items sidenav verti-nav">
           <li onclick="hidesidebar()">
             <a href="#"
               ><svg
@@ -47,17 +47,35 @@
                 /></svg
             ></a>
           </li>
-          <li>
+          <li class="side-drop">
             <a href="#">
               <p>Product</p>
               <i class="fa fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-box">
+                <li class="navbutton">
+                  <a href="#">Pricing</a>
+                </li>
+
+                <li class="navbutton">
+                  <a href="#">Features</a>
+                </li>
+              </ul>
             </a>
           </li>
 
-          <li>
+          <li class="side-drop">
             <a href="#">
               <p>Solutions</p>
               <i class="fa fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-box">
+                <li class="navbutton">
+                  <a href="#">Pricing of things</a>
+                </li>
+
+                <li class="navbutton">
+                  <a href="#">Features</a>
+                </li>
+              </ul>
             </a>
           </li>
 
@@ -72,45 +90,94 @@
               <p>Blog</p>
             </a>
           </li>
-          <li class="download-btn">
+          <li class="download-btn side-drop">
             <a href="#">
               <p>DOWNLOAD</p>
-
               <i class="fa fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-box">
+                <li class="navbutton">
+                  <a href="#">iOS</a>
+                </li>
+
+                <li class="navbutton">
+                  <a href="#">Mac</a>
+                </li>
+                <li class="navbutton">
+                  <a href="#">Windows</a>
+                </li>
+                <li class="navbutton">
+                  <a href="#">Android</a>
+                </li>
+              </ul>
             </a>
           </li>
         </ul>
         <!------------- NAV BAR ------------------>
         <ul class="nav-items">
-          <li class="hide-nav">
+          <li class="horiz-nav">
             <a href="#">
               <p>Product</p>
               <i class="fa fa-solid fa-chevron-down"></i>
+
+              <ul class="dropdown-box">
+                <li class="navbutton">
+                  <a href="#">Pricing</a>
+                </li>
+
+                <li class="navbutton">
+                  <a href="#">Features</a>
+                </li>
+              </ul>
             </a>
           </li>
 
-          <li class="hide-nav">
+          <li class="horiz-nav">
             <a href="#">
               <p>Solutions</p>
               <i class="fa fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-box">
+                <li class="navbutton">
+                  <a href="#">Pricing of things</a>
+                </li>
+
+                <li class="navbutton">
+                  <a href="#">Features</a>
+                </li>
+              </ul>
             </a>
           </li>
 
-          <li class="hide-nav">
+          <li class="horiz-nav">
             <a href="#">
               <p>Resources</p>
             </a>
           </li>
 
-          <li class="hide-nav">
+          <li class="horiz-nav">
             <a href="#">
               <p>Blog</p>
             </a>
           </li>
-          <li class="download-btn hide-nav">
+          <li class="download-btn horiz-nav">
             <a href="#">
               <p>DOWNLOAD</p>
               <i class="fa fa-solid fa-chevron-down"></i>
+
+              <ul class="dropdown-box">
+                <li class="navbutton">
+                  <a href="#">iOS</a>
+                </li>
+
+                <li class="navbutton">
+                  <a href="#">Mac</a>
+                </li>
+                <li class="navbutton">
+                  <a href="#">Windows</a>
+                </li>
+                <li class="navbutton">
+                  <a href="#">Android</a>
+                </li>
+              </ul>
             </a>
           </li>
           <li class="menubutton" onclick="showsidebar()">
@@ -128,6 +195,7 @@
           </li>
         </ul>
       </nav>
+
       <!----------- HEADER SECTION ---===-------->
       <div class="cover">
         <h1>Vibeweaver</h1>

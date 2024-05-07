@@ -45,12 +45,17 @@ nav ul {
   display: flex;
 }
 
-.show-nav {
+.verti-nav {
   display: none;
 }
 
-.show-nav {
+.nav-items li {
+  /* background-color: lime; */
+  padding: 20px 0px;
+}
+.verti-nav {
   position: fixed;
+  padding: 15px;
   top: 0;
   right: 0;
   height: 100vh;
@@ -61,14 +66,6 @@ nav ul {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-
-.show-nav {
-  padding: 0 20px;
-}
-
-nav li {
-  height: 60px;
 }
 
 nav i {
@@ -95,9 +92,40 @@ nav a i {
   font-size: 4rem;
 }
 
+.horiz-nav {
+  padding: 20px 0px;
+}
+
+/* DROPDOWN BOX  
+----------------------------*/
+.navbutton {
+  min-width: 185px;
+  padding: 15px 0px;
+  text-align: center;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.dropdown-box {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  padding: 10px 0;
+  margin-top: 21px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px #00000014;
+}
+
+/* Enables dropdown box */
+.horiz-nav:hover .dropdown-box,
+.side-drop:hover .dropdown-box {
+  display: block;
+}
+
 .download-btn {
   background-color: #f58a65;
-  border-radius: 30px;
+  border-radius: 35px;
 }
 
 .download-btn:hover {
@@ -105,12 +133,15 @@ nav a i {
   transition: 0.3s;
   transition-timing-function: ease-out;
 }
-.nav-items li:nth-child(-n + 4) a:hover {
+.nav-items li:nth-child(-n + 4) a:hover,
+.dropdown-box a:hover {
   color: #f58a65;
   transition: 0.4s;
   transition-timing-function: ease-out;
 }
-.download-btn a {
+
+.download-btn p,
+.download-btn i {
   color: white;
 }
 
@@ -122,6 +153,9 @@ nav a i {
   background-color: #f7dcdb;
   padding: 40px;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cover-icons {
@@ -131,7 +165,7 @@ nav a i {
 
 .cover-icons i {
   font-size: 2rem;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 .cover h1 {
@@ -156,18 +190,36 @@ nav a i {
 }
 
 @media (max-width: 1024px) {
-  .hide-nav {
+  .horiz-nav {
     display: none;
   }
 
   .menubutton {
     display: block;
   }
+
+  .cover {
+    align-items: center;
+    justify-content: center;
+  }
+  .cover p {
+    padding-right: 0;
+    padding: 0 5%;
+  }
 }
 
 @media (max-width: 450px) {
   .sidenav {
     width: 100%;
+  }
+
+  .verti-nav li {
+    /* background-color: lime; */
+    width: 100%;
+  }
+  .verti-nav li a {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
