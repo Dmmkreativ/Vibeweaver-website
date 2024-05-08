@@ -216,12 +216,12 @@
     <script>
       function showsidebar() {
         const sidenav = document.querySelector(".sidenav");
-        sidenav.style.display = "flex";
+        sidenav.classList.add("show-side-nav");
       }
 
       function hidesidebar() {
         const sidenav = document.querySelector(".sidenav");
-        sidenav.style.display = "none";
+        sidenav.classList.remove("show-side-nav");
       }
     </script>
   </body>

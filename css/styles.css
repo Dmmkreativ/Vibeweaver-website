@@ -171,13 +171,14 @@ nav a i {
 .cover h1 {
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: clamp(16px, 1rem + 5vw, 5rem);
   margin-top: 100px;
   padding-bottom: 10px;
 }
 .cover p {
   padding-right: 50%;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: clamp(10px, 0.5rem + 1.5vw, 1.5rem);
   line-height: 1.5;
   margin-bottom: 40px;
 }
@@ -205,6 +206,11 @@ nav a i {
   .cover p {
     padding-right: 0;
     padding: 0 5%;
+    text-align: center;
+  }
+
+  .show-side-nav {
+    display: flex;
   }
 }
 
@@ -226,5 +232,6 @@ nav a i {
 @media (min-width: 1024px) {
   .sidenav {
     display: none;
+    /* background-color: red; */
   }
 }
