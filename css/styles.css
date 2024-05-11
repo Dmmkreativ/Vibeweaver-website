@@ -1,10 +1,10 @@
 /* BRAND COLORS
- PRIMARY - F58A65
- PRIMARY LIGHT - F7DCDB
- PRIMARY LIGHT 2 - FFF3F2
- PRIMARY DARK - 1F233E
- SECONDARY LIGHT - 81D4D9
- SECONDARY DARK - 123436
+ PRIMARY - #F58A65
+ PRIMARY LIGHT - #F7DCDB
+ PRIMARY LIGHT 2 - #FFF3F2
+ PRIMARY DARK - #1F233E
+ SECONDARY LIGHT - #81D4D9
+ SECONDARY DARK - #123436
 
 
 
@@ -30,11 +30,22 @@ body {
   color: #1f233e;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content-wrap {
   max-width: 1440px;
   width: 85%;
   margin: 0 auto;
   padding: 20px 0;
+}
+h2 {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: clamp(16px, 1rem + 6vw, 6rem);
+  line-height: 0.8;
+  padding-bottom: 10px;
 }
 
 /*  TOP NAV
@@ -187,17 +198,206 @@ nav a i {
 .cover h1 {
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 800;
-  font-size: clamp(16px, 1rem + 5vw, 5rem);
+  font-size: clamp(16px, 1rem + 8vw, 8rem);
 
   padding-bottom: 10px;
 }
 .cover p {
-  padding-right: 50%;
+  padding-right: 40%;
   font-weight: 300;
   /* font-size: 1.5rem; */
   font-size: clamp(10px, 0.5rem + 1.5vw, 1.5rem);
   line-height: 1.5;
   margin-bottom: 40px;
+}
+
+/* FIRST SECTION
+----------------------------------------*/
+.first-section {
+  background-color: #f7dcdb;
+  height: 500px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+/* SECOND SECTION 
+----------------------------------------*/
+.second-section {
+  background-color: #1f233e;
+  background-image: url(../images/line.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  min-height: 500px;
+  padding: 200px 0px;
+}
+
+.sec-2 {
+  display: flex;
+  padding-bottom: 150px;
+}
+.card-det {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-det h2 {
+  color: #f7dcdb;
+  padding-bottom: 40px;
+}
+
+.card-det p {
+  color: #f7dcdb;
+  font-size: clamp(10px, 0.5rem + 1.2vw, 1.2rem);
+  padding-right: 20%;
+  line-height: 1.5;
+}
+
+.card-img {
+  height: 500px;
+  flex: 1;
+  background-color: #f7dcdb;
+  width: 100%;
+  object-position: 50% 50%;
+
+  border-radius: 50px;
+  /* padding: 0 50px; */
+  rotate: 1deg;
+}
+
+.sec2-2-det {
+  padding-left: 10%;
+}
+
+/* SECOND SECT BUTTON 
+------------------------*/
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+.sec-btn {
+  padding: 25px 35px;
+  border-radius: 100px;
+  background-color: #f7dcdb;
+  border-style: none;
+}
+
+.sec-btn-link p {
+  padding-left: 10px;
+  text-wrap: nowrap;
+}
+
+.sec-btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-btn-link i,
+.sec-btn-link p {
+  color: #1f233e;
+  font-size: clamp(10px, 0.5rem + 1.2vw, 1.2rem);
+}
+
+/*  THIRD SECTION
+----------------------------------------*/
+
+.third-section {
+  background-color: #81d4d9;
+  background-image: url(../images/line2.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  min-height: 200px;
+  padding: 100px 0px;
+}
+
+.third-section .btn-wrap {
+  display: flex;
+  justify-content: left;
+  margin: 0px;
+}
+
+.third-section .card-det {
+  display: flex;
+  justify-content: left;
+}
+
+.third-section .sec-2 {
+  padding-bottom: 0px;
+}
+
+.third-section .card-det h2 {
+  color: #123436;
+  padding-bottom: 40px;
+}
+
+.third-section .card-det p {
+  color: #123436;
+}
+
+.third-section .sec-btn {
+  color: #81d4d9;
+  background-color: #123436;
+  margin-top: 50px;
+}
+
+.third-section .sec-btn p,
+.third-section .sec-btn i {
+  color: #81d4d9;
+}
+
+/*  FORTH SECTION
+----------------------------------------*/
+.forth-section {
+  background-color: white;
+  min-height: 200px;
+  padding: 200px 0px;
+}
+
+.forth-section .card-det {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forth-section .sec-2 {
+  padding-bottom: 0px;
+}
+.forth-section .card-det h2 {
+  padding-bottom: 40px;
+}
+
+.forth-section .card-det p,
+.forth-section .card-det h2 {
+  color: #1f233e;
+}
+
+.forth-section .sec-btn {
+  background-color: #f58a65;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+.forth-section .sec-btn p,
+.forth-section .sec-btn i {
+  color: #1f233e;
+  font-weight: 500;
+}
+
+.forth-section .card-det p {
+  padding-right: 0%;
+}
+
+.fort-sec-btns {
+  display: flex;
+}
+
+.fort-sec-btns .btn-wrap {
+  padding: 0px 5px;
 }
 
 /*  RESPONSIVENESS
@@ -208,6 +408,8 @@ nav a i {
 }
 
 @media (max-width: 1024px) {
+  /* NAVIGATION
+  ------------------------------------- */
   .horiz-nav {
     display: none;
   }
@@ -215,6 +417,9 @@ nav a i {
   .menubutton {
     display: block;
   }
+
+  /* HEADER
+    ------------------------------------- */
 
   .cover {
     align-items: center;
@@ -229,6 +434,28 @@ nav a i {
 
   .show-side-nav {
     display: flex;
+  }
+
+  /* FIRST SECTION
+  ------------------------------------- */
+
+  /* SECOND SECTION 
+  ------------------------------------- */
+  .sec-2 {
+    flex-direction: column;
+  }
+
+  .card-img {
+    flex: auto;
+    margin-top: 50px;
+  }
+
+  .sec2-2-det {
+    padding-left: 0;
+  }
+
+  .sec2-card2 {
+    flex-direction: column-reverse;
   }
 }
 
