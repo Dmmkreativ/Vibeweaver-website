@@ -215,9 +215,13 @@ nav a i .fa {
 ----------------------------------------*/
 .first-section {
   background-color: #f7dcdb;
-  height: 500px;
+  background-image: url(../images/sec1\ preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 600px;
   border-radius: 30px;
-  margin-bottom: 100px;
+  margin-block: 100px;
 }
 
 /* SECOND SECTION 
@@ -264,7 +268,7 @@ nav a i .fa {
 
   border-radius: 50px;
   /* padding: 0 50px; */
-  rotate: 1deg;
+  rotate: 2deg;
 }
 
 .sec2-2-det {
@@ -555,6 +559,10 @@ h4 {
 @media (max-width: 450px) {
   .sidenav {
     width: 100%;
+  }
+  .ftr-link-cards {
+    min-width: 180px;
+    padding-right: 20px;
   }
 }
 
