@@ -103,11 +103,11 @@ nav a {
 }
 
 nav a p {
-  font-size: 1.2rem;
+  font-size: clamp(15px, 0.5rem + 1.2vw, 1.2rem);
   font-weight: 500;
 }
 
-nav a i {
+nav a i .fa {
   font-size: 4rem;
 }
 
@@ -324,6 +324,7 @@ nav a i {
 .third-section .card-det {
   display: flex;
   justify-content: left;
+  justify-content: center;
 }
 
 .third-section .sec-2 {
@@ -482,6 +483,14 @@ h4 {
     display: block;
   }
 
+  .verti-nav li {
+    width: 100%;
+  }
+  .verti-nav li a {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* HEADER
     ------------------------------------- */
 
@@ -546,15 +555,6 @@ h4 {
 @media (max-width: 450px) {
   .sidenav {
     width: 100%;
-  }
-
-  .verti-nav li {
-    /* background-color: lime; */
-    width: 100%;
-  }
-  .verti-nav li a {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
