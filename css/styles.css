@@ -191,7 +191,7 @@ nav a i {
 }
 
 .cover-icons i {
-  font-size: 2rem;
+  font-size: clamp(20px, 0.7rem + 2vw, 2rem);
   padding-right: 50px;
 }
 
@@ -279,7 +279,7 @@ nav a i {
   justify-content: center;
 }
 .sec-btn {
-  padding: 25px 35px;
+  padding: 20px 30px;
   border-radius: 100px;
   background-color: #f7dcdb;
   border-style: none;
@@ -355,7 +355,7 @@ nav a i {
 .forth-section {
   background-color: white;
   min-height: 200px;
-  padding: 200px 0px;
+  padding: 100px 0px;
 }
 
 .forth-section .card-det {
@@ -379,7 +379,7 @@ nav a i {
 .forth-section .sec-btn {
   background-color: #f58a65;
   margin: 0px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .forth-section .sec-btn p,
@@ -394,14 +394,78 @@ nav a i {
 
 .fort-sec-btns {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 30px;
 }
 
 .fort-sec-btns .btn-wrap {
   padding: 0px 5px;
 }
 
-/*  RESPONSIVENESS
+/*  FOOTER SECTION
 ----------------------------------------*/
+
+footer {
+  background-color: #1f233e;
+  color: #f7dcdb;
+}
+
+.footer-wrap a {
+  color: #f7dcdb;
+  font-weight: 300;
+}
+
+.footer-wrap {
+  padding: 50px 0px;
+}
+h4 {
+  font-size: clamp(15px, 0.5rem + 1.5vw, 1.5rem);
+  padding-bottom: 40px;
+}
+
+.footer-links {
+  padding-bottom: 70px;
+}
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  min-width: 250px;
+  width: 35%;
+  justify-content: space-between;
+}
+.footer-icons a {
+  font-size: clamp(20px, 0.7rem + 2vw, 2rem);
+}
+
+.ftr-flex {
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ftr-link-cards {
+  padding-bottom: 40px;
+  padding-right: 25px;
+}
+
+.ftr-link-cards li {
+  padding-bottom: 30px;
+  text-wrap: nowrap;
+  font-size: clamp(10px, 0.5rem + 1vw, 1rem);
+}
+
+.ftr-bottom {
+  border-top: 2px solid #f7dcdb35;
+  padding-top: 50px;
+}
+
+.ftr-bottom p {
+  font-size: clamp(8px, 0.5rem + 0.8vw, 0.8rem);
+}
+
+/*  RESPONSIVENESS
+------------------------------------------------------- */
 
 .menubutton {
   display: none;
@@ -436,6 +500,14 @@ nav a i {
     display: flex;
   }
 
+  .cover-icons {
+    justify-content: space-between;
+    width: 35vw;
+  }
+
+  .cover-icons i {
+    padding-right: 0px;
+  }
   /* FIRST SECTION
   ------------------------------------- */
 
@@ -456,6 +528,18 @@ nav a i {
 
   .sec2-card2 {
     flex-direction: column-reverse;
+  }
+  /* FOOTER SECTION 
+    ------------------------------------- */
+
+  .ftr-flex {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .ftr-link-cards {
+    min-width: 240px;
+    padding-right: 20px;
   }
 }
 
